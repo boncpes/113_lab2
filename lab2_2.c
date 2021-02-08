@@ -2,11 +2,14 @@
 int main()
 {
     char pro;
-    float t,sum,m,s;
+    float t,sum;
+    int s,m;
     scanf("%c",&pro);
     scanf("%f",&t);
     m=(int)t;
-    s=(m*60)+(t-m)*100;
+    s=(t-m)*100.0;
+    printf("%d\n",s);
+    printf("%d\n",m);
     if(pro == 'A')
     {
         sum = 199.00;
