@@ -1,29 +1,23 @@
 #include<stdio.h>
 int main()
 {
-    char pro
+    char pro;
     float t,sum,m,s;
     scanf("%c",&pro);
-    scnaf("%f",&t);
+    scanf("%f",&t);
     m=(int)t;
-    s=(t-m)*100;
+    s=(m*60)+(t-m)*100;
     if(pro == 'A')
     {
         sum = 199.00;
-        if(t>200.00)
+        if(m>200.00)
         {
-
+            sum += s*(0.05);
         }
 
     }
     else if(pro == 'B')
     {
-        sum = 299.00;
-        if(t>400.00)
-        {
-
-        }
-
     }
     printf("%d",sum);
     return 0;
