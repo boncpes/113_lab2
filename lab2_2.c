@@ -2,9 +2,11 @@
 int main()
 {
     char pro
-    float t,sum;
+    float t,sum,m,s;
     scanf("%c",&pro);
     scnaf("%f",&t);
+    m=(int)t;
+    s=(t-m)*100;
     if(pro == 'A')
     {
         sum = 199.00;
