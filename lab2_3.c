@@ -1,12 +1,11 @@
 #include<stdio.h>
-#include <string.h>
 int main()
 {
     int n[3],i,j,t=0;
-    char ap[3];
+    char a,b,c;
     scanf("%d %d %d",&n[0],&n[1],&n[2]);
     fflush(stdin);
-    scanf("%[^\n]s",ap);
+    scanf("%c%c%c",&a,&b,&c);
     while(1)
     {
         int k=0;
@@ -27,11 +26,7 @@ int main()
         if(k==0)
             break;
     }
-    for(i=0; i<3; i++)
-        printf("%d ",n[i]);
-    for(i=0; i<3; i++)
-    {
-        switch(ap[i])
+    switch(a)
         {
         case 'A':
             printf("%d ",n[0]);
@@ -43,6 +38,29 @@ int main()
             printf("%d ",n[2]);
             break;
         }
-    }
+    switch(b)
+        {
+        case 'A':
+            printf("%d ",n[0]);
+            break;
+        case 'B':
+            printf("%d ",n[1]);
+            break;
+        case 'C':
+            printf("%d ",n[2]);
+            break;
+        }
+    switch(c)
+        {
+        case 'A':
+            printf("%d ",n[0]);
+            break;
+        case 'B':
+            printf("%d ",n[1]);
+            break;
+        case 'C':
+            printf("%d ",n[2]);
+            break;
+        }
     return 0;
 }

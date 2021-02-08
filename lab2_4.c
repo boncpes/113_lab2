@@ -5,7 +5,7 @@ int main()
     int d;
     scanf("%c",&n);
     scanf("%d",&d);
-    if(d%2 != 0)
+    if(d%2 == 0)
     {
       if(n>=65 && n<74)
         {
