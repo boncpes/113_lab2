@@ -4,7 +4,7 @@ int main()
     int n[3],i,j,t=0;
     char a,b,c;
     scanf("%d %d %d",&n[0],&n[1],&n[2]);
-    fflush(stdin);
+    getchar();
     scanf("%c%c%c",&a,&b,&c);
     while(1)
     {
@@ -26,41 +26,26 @@ int main()
         if(k==0)
             break;
     }
-    switch(a)
-        {
-        case 'A':
-            printf("%d ",n[0]);
-            break;
-        case 'B':
-            printf("%d ",n[1]);
-            break;
-        case 'C':
-            printf("%d ",n[2]);
-            break;
-        }
-    switch(b)
-        {
-        case 'A':
-            printf("%d ",n[0]);
-            break;
-        case 'B':
-            printf("%d ",n[1]);
-            break;
-        case 'C':
-            printf("%d ",n[2]);
-            break;
-        }
-    switch(c)
-        {
-        case 'A':
-            printf("%d ",n[0]);
-            break;
-        case 'B':
-            printf("%d ",n[1]);
-            break;
-        case 'C':
-            printf("%d ",n[2]);
-            break;
-        }
+    if(a=='A')
+        printf("%d ",n[0]);
+    else if(a=='B')
+        printf("%d ",n[1]);
+    else if(a=='C')
+        printf("%d ",n[2]);
+
+    if(b=='A')
+        printf("%d ",n[0]);
+    else if(b=='B')
+        printf("%d ",n[1]);
+    else if(b=='C')
+        printf("%d ",n[2]);
+
+    if(c=='A')
+        printf("%d ",n[0]);
+    else if(c=='B')
+        printf("%d ",n[1]);
+    else if(c=='C')
+        printf("%d ",n[2]);
+
     return 0;
 }

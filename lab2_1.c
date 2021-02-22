@@ -1,26 +1,22 @@
 #include <stdio.h>
-int main()
+#include <math.h>
+double f(int x)
 {
-    int a,b,c,g;
-    scanf("%d",&a);
-    scanf("%d",&b);
-    scanf("%d",&c);
-    g=a+b+c;
-    if(g>=80 && g<101)
-        printf("A");
-    else if(g>=75 && g<80)
-        printf("B+");
-    else if(g>=70 && g<75)
-        printf("B");
-    else if(g>=65 && g<70)
-        printf("C+");
-    else if(g>=60 && g<=65)
-        printf("C");
-    else if(g>=55 && g<=60)
-        printf("D+");
-    else if(g>=50 && g<=55)
-        printf("D");
-    else if(g>=0 && g<=50)
-        printf("F");
-    return 0;
+    int i = 0;
+    int a = (int)floor(20+10sin(x/3.14159));
+    for(i=0 ; i<a ; i++)
+        printf(" ");
+    printf("\n");
+    return a;
+}
+void main()
+{
+    int x;
+    printf(" x | f(x)\n");
+    printf("---+---------------------------------->y\n");
+    for (x = 0; x <= 20; x++)
+    {
+        f(x);
+        printf("%2d |\n", x);
+    }
 }
